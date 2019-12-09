@@ -30,7 +30,7 @@ def echo(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text='Block added with id:'+str(result.id))
 
 def initTelegram:
-    updater = Updater(token='988894343:AAF8QugfGFSssOBpkGtXfme1pejN8bnirvg', use_context=True)
+    updater = Updater(token='<TELEGRAM_TOKEN>', use_context=True)
     dispatcher = updater.dispatcher
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                          level=logging.INFO)
